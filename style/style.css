@@ -850,7 +850,7 @@ button {
   padding: 100px 0;
   background: #ffffff;
   /* background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png"); */
-  background-image: url("/images/service-background.png");
+  background-image: url("images/service-background.png");
   /* background-size: 320px; */
   opacity: 0.98;
 }
