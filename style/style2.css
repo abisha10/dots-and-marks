@@ -3,7 +3,7 @@
    ======================================== */
 
 .projects-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
   overflow: hidden;
@@ -297,18 +297,16 @@
    ======================================== */
 
 .process-section {
-  /* padding: 80px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f9fafb 100%);
-  position: relative;
-  overflow: hidden; */
-
-  padding: 100px 0;
+  padding: 70px 0;
   background: #f8f8f8;
-  background-image: url("/images/process-background.png");
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   background-size: 400px;
   opacity: 0.98;
-
+  
 }
+
+
+
 
 /* Architectural Shapes Background */
 .arch-shapes {
@@ -610,7 +608,7 @@
    ======================================== */
 
 .testimonials-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
   overflow: hidden;
@@ -838,7 +836,7 @@
    ======================================== */
 
 .contact-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   position: relative;
 }
