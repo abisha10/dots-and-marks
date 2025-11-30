@@ -1,10 +1,27 @@
-const mobileBtn = document.getElementById('mobileMenuBtn');
-const mobileMenu = document.getElementById('mobileMenuOverlay');
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".nav-item.dropdown");
 
-mobileBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("show.bs.dropdown", function () {
+      this.querySelector("i.fa-chevron-down").style.transform = "rotate(180deg)";
+    });
+    dropdown.addEventListener("hide.bs.dropdown", function () {
+      this.querySelector("i.fa-chevron-down").style.transform = "rotate(0deg)";
+    });
+  });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("#mobileNav a");
+  const bsCollapse = new bootstrap.Collapse(document.getElementById("mobileNav"), {
+    toggle: false
+  });
 
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      bsCollapse.hide(); // close menu
+    });
+  });
+});
 
 // ========================================
 // PREMIUM HERO CAROUSEL

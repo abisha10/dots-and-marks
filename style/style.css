@@ -21,6 +21,10 @@
 /* ========================================
    RESET & BASE
    ======================================== */
+html, body {
+  width: 100%;
+  overflow-x: hidden !important; 
+}
 
 * {
   margin: 0;
@@ -37,9 +41,6 @@ body {
   line-height: 1.6;
 }
 
- html, body {
-            overflow-x: hidden;
-        }
 
 a {
   text-decoration: none;
@@ -140,6 +141,18 @@ button {
   transform: scaleX(1);
 }
 
+/* Prevent nav link turning black on click or when active */
+.nav-link:focus,
+.nav-link:active,
+.nav-link.active {
+  color: var(--gold) !important;
+}
+
+.nav-link:focus::after,
+.nav-link:active::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
 .btn-gold-outline {
   padding: 10px 24px;
   border: 2px solid rgba(212, 175, 55, 0.4);
@@ -1144,4 +1157,53 @@ button {
 /* Show overlay when active */
 .mobile-menu-overlay.active {
   display: flex;
+}
+
+
+/* -------------------------------------------- */
+/* Base for hamburger lines */
+        .navbar-toggler {
+        border: none;
+        outline: none;
+        padding: 0.25rem 0.5rem;
+        }
+
+        .toggler-icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #ffb47a;  /* your stroke color */
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        position: relative;
+        }
+
+        /* Animate when expanded (Bootstrap sets aria-expanded="true") */
+        .navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        }
+        .navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(2) {
+        opacity: 0;
+        }
+        .navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /*  */
+.nav-box {
+  background: #000;              /* black */
+  padding: 20px;
+  margin: 15px;
+  border-radius: 18px;           /* rounded corners */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+.navbar,
+#mobileNav,
+.offcanvas,
+.navbar-collapse {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
 }

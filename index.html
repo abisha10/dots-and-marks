@@ -21,18 +21,17 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header" id="siteHeader">
-  <div class="container d-flex justify-content-between align-items-center">
-    
+  <header class="site-header overflow-x-hidden" id="siteHeader">
+  <div class="container d-flex justify-content-between align-items-center overflow-x-hidden">
+
     <!-- Logo -->
     <a class="navbar-brand" href="#hero">
       <img src="logos/Dots and Marks W Logo.png" alt="Dots & Marks Logo" style="height:70px;">
     </a>
 
-    <!-- Desktop Menu -->
+    <!-- Desktop Menu (only visible on lg and above) -->
     <nav class="desktop-menu d-none d-lg-flex align-items-center position-absolute start-50 translate-middle-x">
-      <ul class="navbar-nav d-flex flex-row gap-2 mb-0">
+      <ul class="navbar-nav d-flex flex-row gap-1 mb-0">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -45,32 +44,32 @@
     <!-- Call Button -->
     <a class="btn btn-gold-outline d-none d-lg-block" href="tel:+11234567890">Call Us</a>
 
-    <!-- Mobile Menu Button -->
-    <button class="mobile-menu-btn d-lg-none" id="mobileMenuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
     </button>
+
   </div>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-    <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
-    <ul class="mobile-nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <!-- Mobile Menu (Collapse only for sm-md) -->
+  <div class="collapse d-lg-none bg-black nav-box overflow-x-hidden" id="mobileNav">
+    <ul class="navbar-nav text-center py-3">
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+      <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
-    <a class="btn btn-gold-outline mt-3" href="tel:+11234567890">Call Us</a>
   </div>
 </header>
 
 
+
   <!-- Hero Carousel -->
-  <section class="hero-carousel" id="hero">
+  <section class="hero-carousel overflow-x-hidden" id="hero">
     
    
       <!-- Slide 1 -->
@@ -1345,7 +1344,7 @@
 </footer>
 
 <!-- Scroll to Top Button -->
-<button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+<button class="scroll-to-top overflow-x-hidden" id="scrollToTop" aria-label="Scroll to top">
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
