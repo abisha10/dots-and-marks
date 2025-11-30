@@ -302,6 +302,8 @@
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   background-size: 400px;
   opacity: 0.98;
+  position: relative;
+  overflow: hidden !important;
   
 }
 
